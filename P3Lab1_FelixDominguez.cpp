@@ -73,7 +73,7 @@ int main()
         cin >> v2;
 
         if (v2 > v1) {
-            cout << "El valor de B no puede ser mayor que el de C" << endl;
+            cout << "El valor de A no puede ser mayor que el de C" << endl;
         }else if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
             cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
         }
@@ -103,7 +103,7 @@ int main()
             }
 
             if (exacta == 1) {
-                cout << "A = " << final << endl;
+                cout << "B = " << final << endl;
             }
             else {
                 cout << "El resultado no es un numero entero" << endl;
@@ -150,7 +150,7 @@ int main()
             }
 
             if (exacta == 1) {
-                cout << "A = " << final << endl;
+                cout << "C = " << final << endl;
             }
             else {
                 cout << "El resultado no es un numero entero" << endl;
