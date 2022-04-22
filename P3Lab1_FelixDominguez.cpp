@@ -2,10 +2,49 @@
 //
 
 #include <iostream>
+using namespace std;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    int inco,v1,v2;
+    cout << "Seleccione la incognita A/B/C: ";
+    cin >> inco;
+
+    cout << "Ecuacion inicial: ";
+    cout << "C^2 = A^2 + B^2";
+    if (inco == 1) {
+        cout << "Despejar para A";
+        cout << "A^2 = C^2 - B^2";
+
+        cout << "Ingrese el valor de C: ";
+        cin >> v1;
+
+        cout << "Ingrese el valor de B: ";
+        cin >> v2;
+
+    }
+    else if (inco == 2) {
+        cout << "Despejar para B";
+        cout << "B^2 = C^2 - A^2";
+
+        cout << "Ingrese el valor de C: ";
+        cin >> v1;
+
+        cout << "Ingrese el valor de A: ";
+        cin >> v2;
+
+    }
+    else if (inco == 3) {
+        cout << "Despejar para C";
+        cout << "C^2 = A^2 + B^2";
+
+        cout << "Ingrese el valor de A: ";
+        cin >> v1;
+
+        cout << "Ingrese el valor de B: ";
+        cin >> v2;
+    }
+
 }
 
 // Ejecutar programa: Ctrl + F5 o menú Depurar > Iniciar sin depurar
