@@ -7,42 +7,73 @@ using namespace std;
 int main()
 {
     int inco,v1,v2;
-    cout << "Seleccione la incognita A/B/C: ";
+    cout << "Seleccione la incognita A/B/C: " << endl;
     cin >> inco;
 
-    cout << "Ecuacion inicial: ";
-    cout << "C^2 = A^2 + B^2";
+    cout << "Ecuacion inicial:" << endl;
+    cout << "C^2 = A^2 + B^2" << endl;
     if (inco == 1) {
-        cout << "Despejar para A";
-        cout << "A^2 = C^2 - B^2";
+        cout << "Despejar para A" << endl;
+        cout << "A^2 = C^2 - B^2" << endl;
 
-        cout << "Ingrese el valor de C: ";
+        cout << "Ingrese el valor de C: " << endl;
         cin >> v1;
 
-        cout << "Ingrese el valor de B: ";
+        cout << "Ingrese el valor de B: " << endl;
         cin >> v2;
+
+        if (v2 > v1) {
+            cout << "El valor de B no puede ser mayor que el de C" << endl;
+        }if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
+            cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
+        }
+        else {
+            cout << "Ecuacion: " << endl;
+            cout << "A^2 = " << v1 << "^2 - " << v2 << "^2" << endl;
+        }
 
     }
     else if (inco == 2) {
-        cout << "Despejar para B";
-        cout << "B^2 = C^2 - A^2";
+        cout << "Despejar para B" << endl;
+        cout << "B^2 = C^2 - A^2" << endl;
 
-        cout << "Ingrese el valor de C: ";
+        cout << "Ingrese el valor de C: " << endl;
         cin >> v1;
 
-        cout << "Ingrese el valor de A: ";
+        cout << "Ingrese el valor de A: " << endl;
         cin >> v2;
+
+        if (v2 > v1) {
+            cout << "El valor de B no puede ser mayor que el de C" << endl;
+        }if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
+            cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
+        }
+        else {
+            cout << "Ecuacion: " << endl;
+            cout << "B^2 = " << v1 << "^2 - " << v2 << "^2" << endl;
+        }
 
     }
     else if (inco == 3) {
-        cout << "Despejar para C";
-        cout << "C^2 = A^2 + B^2";
+        cout << "Despejar para C" << endl;
+        cout << "C^2 = A^2 + B^2" << endl;
 
-        cout << "Ingrese el valor de A: ";
+        cout << "Ingrese el valor de A: " << endl;
         cin >> v1;
 
-        cout << "Ingrese el valor de B: ";
+        cout << "Ingrese el valor de B: " << endl;
         cin >> v2;
+
+        if (v2 > v1) {
+            cout << "El valor de B no puede ser mayor que el de C" << endl;
+        }if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
+            cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
+        }
+        else {
+            cout << "Ecuacion: " << endl;
+            cout << "C^2 = " << v1 << "^2 + " << v2 << "^2" << endl;
+        }
+
     }
 
 }
