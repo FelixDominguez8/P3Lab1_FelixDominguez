@@ -24,12 +24,41 @@ int main()
 
         if (v2 > v1) {
             cout << "El valor de B no puede ser mayor que el de C" << endl;
-        }if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
+        }else if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
             cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
+            
         }
         else {
             cout << "Ecuacion: " << endl;
             cout << "A^2 = " << v1 << "^2 - " << v2 << "^2" << endl;
+
+            v1 = v1 * v1;
+            v2 = v2 * v2;
+
+            cout << "A^2 = " << v1 << " - " << v2 << endl;
+
+            v1 = v1 - v2;
+
+            cout << "A^2 = " << v1 << endl;
+
+            int raiz;
+            int final=0;
+            int exacta=0;
+            for (int i = 1; i < v1; i++) {
+                raiz = i * i;
+
+                if (raiz == v1) {
+                    exacta = 1;
+                    final = i;
+                }
+            }
+
+            if (exacta == 1) {
+                cout << "A = " << final << endl;
+            }
+            else {
+                cout << "El resultado no es un numero entero" << endl;
+            }
         }
 
     }
@@ -45,12 +74,40 @@ int main()
 
         if (v2 > v1) {
             cout << "El valor de B no puede ser mayor que el de C" << endl;
-        }if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
+        }else if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
             cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
         }
         else {
             cout << "Ecuacion: " << endl;
             cout << "B^2 = " << v1 << "^2 - " << v2 << "^2" << endl;
+
+            v1 = v1 * v1;
+            v2 = v2 * v2;
+
+            cout << "B^2 = " << v1 << " - " << v2 << endl;
+
+            v1 = v1 - v2;
+
+            cout << "B^2 = " << v1 << endl;
+
+            int raiz;
+            int final = 0;
+            int exacta = 0;
+            for (int i = 1; i < v1; i++) {
+                raiz = i * i;
+
+                if (raiz == v1) {
+                    exacta = 1;
+                    final = i;
+                }
+            }
+
+            if (exacta == 1) {
+                cout << "A = " << final << endl;
+            }
+            else {
+                cout << "El resultado no es un numero entero" << endl;
+            }
         }
 
     }
@@ -64,14 +121,40 @@ int main()
         cout << "Ingrese el valor de B: " << endl;
         cin >> v2;
 
-        if (v2 > v1) {
-            cout << "El valor de B no puede ser mayor que el de C" << endl;
-        }if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
+        if (v1 > 15 || v2 > 15 || v1 < 4 || v2 < 4) {
             cout << "Los valores de las variables deben de ser mayores a 3 y menores que 16" << endl;
         }
         else {
             cout << "Ecuacion: " << endl;
             cout << "C^2 = " << v1 << "^2 + " << v2 << "^2" << endl;
+
+            v1 = v1 * v1;
+            v2 = v2 * v2;
+
+            cout << "C^2 = " << v1 << " + " << v2 << endl;
+
+            v1 = v1 + v2;
+
+            cout << "C^2 = " << v1 << endl;
+
+            int raiz;
+            int final = 0;
+            int exacta = 0;
+            for (int i = 1; i < v1; i++) {
+                raiz = i * i;
+
+                if (raiz == v1) {
+                    exacta = 1;
+                    final = i;
+                }
+            }
+
+            if (exacta == 1) {
+                cout << "A = " << final << endl;
+            }
+            else {
+                cout << "El resultado no es un numero entero" << endl;
+            }
         }
 
     }
